@@ -3,28 +3,28 @@
 
 ## Informações importantes
 
-  - [Clique
-    aqui](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip)
-    para baixar o material do curso.
+- [Clique
+  aqui](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip)
+  para baixar o material do curso.
 
-  - Nosso blog: <https://curso-r.com/blog/>
+- Nosso blog: <https://curso-r.com/blog/>
 
-  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
-    [Zen do R](https://curso-r.github.io/zen-do-r/)
+- Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+  [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
-  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
+- perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
-  - perguntas sobre R, principalmente as que envolverem código, deverão
-    ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
+- perguntas sobre R, principalmente as que envolverem código, deverão
+  ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
 | slides                                                                                                                         | pdf                                                                                                                          |
-| :----------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+|:-------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | [01-introducao-ao-curso.html](https://curso-r.github.io/main-intro-programacao/slides/01-introducao-ao-curso.html)             | [01-introducao-ao-curso.pdf](https://curso-r.github.io/main-intro-programacao/slides/01-introducao-ao-curso.pdf)             |
 | [02-introducao-ao-RStudio.html](https://curso-r.github.io/main-intro-programacao/slides/02-introducao-ao-RStudio.html)         | [02-introducao-ao-RStudio.pdf](https://curso-r.github.io/main-intro-programacao/slides/02-introducao-ao-RStudio.pdf)         |
 | [03-introducao-ao-R.html](https://curso-r.github.io/main-intro-programacao/slides/03-introducao-ao-R.html)                     | [03-introducao-ao-R.pdf](https://curso-r.github.io/main-intro-programacao/slides/03-introducao-ao-R.pdf)                     |
@@ -36,35 +36,14 @@ Fora do horário de aula ou monitoria:
 
 ## Scripts utilizados em aula
 
-| script                                                                                                                                                     |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [exemplos\_de\_aula/01-introducao.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/01-introducao.R)                     |
-| [exemplos\_de\_aula/02-tabelas.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/02-tabelas.R)                           |
-| [exemplos\_de\_aula/03-filtros.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/03-filtros.R)                           |
-| [exemplos\_de\_aula/04-controle-de-fluxo-NA.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/04-controle-de-fluxo-NA.R) |
-| [exemplos\_de\_aula/05-loops.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/05-loops.R)                               |
-| [exemplos\_de\_aula/06-loops-2.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/06-loops-2.R)                           |
-| [exemplos\_de\_aula/07-funcoes.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/07-funcoes.R)                           |
-| [exemplos\_de\_aula/08-pipe.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/08-pipe.R)                                 |
-| [exemplos\_de\_aula/09-instalar-pacotes.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/09-instalar-pacotes.R)         |
-| [exemplos\_de\_aula/10-manipulacao-arquivos.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/10-manipulacao-arquivos.R) |
-| [exemplos\_de\_aula/11-exemplo-source.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos_de_aula/11-exemplo-source.R)             |
+| script |
+|:-------|
 
 ## Lição de casa
 
-| exercicio                                                                                               |
-| :------------------------------------------------------------------------------------------------------ |
-| [exercicios/1-introducao.R](https://curso-r.github.io/main-intro-programacao/exercicios/1-introducao.R) |
-| [exercicios/2-tabelas.R](https://curso-r.github.io/main-intro-programacao/exercicios/2-tabelas.R)       |
-| [exercicios/3-filtros.R](https://curso-r.github.io/main-intro-programacao/exercicios/3-filtros.R)       |
-| [exercicios/4-operadores.R](https://curso-r.github.io/main-intro-programacao/exercicios/4-operadores.R) |
-| [exercicios/5-loops.R](https://curso-r.github.io/main-intro-programacao/exercicios/5-loops.R)           |
-| [exercicios/6-funcoes.R](https://curso-r.github.io/main-intro-programacao/exercicios/6-funcoes.R)       |
-
-## Trabalhos finais premiados
-
-| pasta\_compactada |
-| :---------------- |
+| exercicio                                                                   |
+|:----------------------------------------------------------------------------|
+| [01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/) |
 
 ## Material extra
 
@@ -72,8 +51,10 @@ Referências extras relacionadas com o conteúdos das aulas, ou materiais
 que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
-| Aula | Tema | Descrição |
-| :--- | :--- | :-------- |
+| Aula | Tema       | Descrição                                                                         |
+|-----:|:-----------|:----------------------------------------------------------------------------------|
+|    0 | Instalação | [Instalação do R](https://livro.curso-r.com/1-1-instalacao-do-r.html)             |
+|    0 | Instalação | [Instalação do RStudio](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html) |
 
 ## Redes sociais da Curso-R
 
