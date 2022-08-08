@@ -159,8 +159,6 @@ Linkedin: https://www.linkedin.com/company/curso-r/
 
 Facebook: https://www.facebook.com/cursodeR
 
-
-
 ```{r include=FALSE}
 # Criar arquivo _config.yml
 if(params$download_material == TRUE){
@@ -168,7 +166,7 @@ if(params$download_material == TRUE){
     "logo: assets/logo.png", '\n',
     "title: {params$nome_curso}", '\n',
     "show_downloads: true", '\n',
-    "link_material: 'https://github.com/curso-r/{params$main_repo}/raw/master/material_do_curso.zip'", '\n'
+    "link_material: 'https://github.com/curso-r/{params$turma}/archive/refs/heads/main.zip'", '\n'
     
     ) %>%
     readr::write_lines( "_config.yml")
