@@ -8,9 +8,8 @@
 
 # Rodando códigos (o R como calculadora) ----------------------------------
 
-# ATALHO para rodar o código: CTRL + ENTER  
+# ATALHO para rodar o código: CTRL + ENTER
 # Mesmo atalho no Mac: Command + ENTER
-
 
 # adição
 1 + 1
@@ -24,8 +23,12 @@
 # divisão
 5 / 3
 
+# com ponto
+1.5 + 1
+
 # potência
 4 ^ 2
+
 
 # Criando objetos/variáveis -----------------------------------------------
 
@@ -46,6 +49,7 @@ resultado <- 33 / 11
 
 # atualizar um objeto
 resultado <- resultado * 5
+resultado
 
 # O R difencia minúscula de maiúscula!
 
@@ -84,6 +88,9 @@ E_algumasPoucas.Pessoas_RENUNCIAMconvenções
 
 # 1. Multiplique a sua idade por 12 e salve em um objeto chamado "meses".
 
+meses <- 26 * 12
+meses
+
 ##############################
 # Use aspas para criar texto #
 ##############################
@@ -104,13 +111,15 @@ a <- 10
 
 obj <- "a"
 obj2 <- "masculino"
+obj
+obj2
 
-# note que na aba "variáveis" os formatos das variáveis "obj" e "a" 
+# note que na aba "variáveis" os formatos das variáveis "obj" e "a"
 # são diferentes
 
 # Valores lógicos/booleanos (verdadeiro ou falso)
 
-class(TRUE) 
+class(TRUE)
 class(FALSE)
 
 # Vetores -----------------------------------------------------------------
@@ -134,7 +143,6 @@ vetor2
 
 # Vetor de -3 a 3
 -3:3
-
 
 # Vetores são conjuntos indexado de valores
 # Quando dizemos que vetores são conjuntos indexados,
@@ -208,7 +216,7 @@ vetor1 + vetor2
 # a. Guarde em um objeto uma sequência de números que comece
 # em 0 e termine em 5.
 
-# b. Use subsetting para fazer o R devolver o primeiro número dessa 
+# b. Use subsetting para fazer o R devolver o primeiro número dessa
 # sequência.
 # Em seguida, faça o R devolver o último número da sequência.
 
@@ -238,6 +246,8 @@ c(1, 3, 5)
 # a receita é o código que a função executa (usando os argumentos/ingredientes)
 # e o bolo é o resultado da função
 
+# Formatar um número com mais dígitos depois da vírgula
+format(2/3)
 
 # A ordem é importante se você não nomear os argumentos
 
@@ -259,7 +269,7 @@ mean(vetor_exemplos)
 
 median(vetor_exemplos)
 
-# Exemplo 3 var - Como calcular uma variância 
+# Exemplo 3 var - Como calcular uma variância
 
 var(vetor_exemplos)
 
@@ -299,7 +309,7 @@ resultado_colado <- paste0(1, "a")
 # 1 - O R propriamente dito é aquela caixinha onde se lê "Console" escrito
 # em cima
 
-# 2 - Você pode escrever comeando direto nele, do lado daquele sinal de 
+# 2 - Você pode escrever comeando direto nele, do lado daquele sinal de
 # maior: ">"
 
 # É muito comum você fazer contas direto no Console, por exemplo.
@@ -308,7 +318,7 @@ resultado_colado <- paste0(1, "a")
 # 5+1, 4+2, 1-1, 1/1 etc
 
 # 3 - O jeito mais comum de programar em R é escrevendo vários comandos em
-# um arquivo de texto e executando todos eles de uma vez, manualmente ou 
+# um arquivo de texto e executando todos eles de uma vez, manualmente ou
 # talvez até programando o computador para fazer isso.
 
 # 4 - Aprendemos vários exemplos de comandos que podemos usar no R:
