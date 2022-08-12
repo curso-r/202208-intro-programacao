@@ -40,8 +40,8 @@ obj
 soma <- 2 + 2
 soma
 
-# ATALHO para a <- : ALT - (alt menos)
-# Mesmo atalho no Mac: Option - (Option menos)
+# ATALHO para a <- : ALT + - (alt menos)
+# Mesmo atalho no Mac: Option + - (Option menos)
 
 # salvar saída versus apenas executar
 33 / 11
