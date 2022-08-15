@@ -42,9 +42,11 @@ Fora do horário de aula ou monitoria:
 
 ## Lição de casa
 
-| exercicio                                                                   |
-|:----------------------------------------------------------------------------|
-| [01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/) |
+| exercicio                                                                                        |
+|:-------------------------------------------------------------------------------------------------|
+| [01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/)                      |
+| [02-tabelas](https://acursor.shinyapps.io/intro-programacao_tabelas)                             |
+| [03-comparacoes-logicas-e-NA](https://acursor.shinyapps.io/intro-programacao_dados-faltantes-NA) |
 
 ## Material extra
 
@@ -64,6 +66,15 @@ relacionadas com o conteúdo da aula).
 |    1 | Introdução  | [Texto sobre projetos no RStudio: Rproj e diretórios](https://curso-r.github.io/zen-do-r/rproj-dir.html)                                                  |
 |    1 | Introdução  | [Texto sobre o painel Environment no RStudio e o armazenamento de objetos: .RData e .Rhistory](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)    |
 |    1 | Introdução  | [Folhas de cola da RStudio](https://www.rstudio.com/resources/cheatsheets/)                                                                               |
+|    2 | Introdução  | [Texto de introdução à estatística descritiva](https://escoladedados.org/tutoriais/analise-com-estatistica-descritiva-para-leigos/)                       |
+|    2 | Comunidades | [R Brasil - Telegram](https://t.me/rbrasiloficial)                                                                                                        |
+|    2 | Comunidades | [RLadies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil)                                                                                           |
+|    2 | Extra       | [Livro Estatística e Ciência de Dados](https://www.ime.usp.br/~jmsinger/MAE0217/cdados2021out12.pdf)                                                      |
+|    2 | Funções     | [Livro Ciência de Dados em R - Capítulo 4 - Pacotes](https://livro.curso-r.com/4-pacotes.html)                                                            |
+|    2 | Introdução  | [Livro Ciência de Dados em R - Capítulo 3 - R Base](https://livro.curso-r.com/3-r-base.html)                                                              |
+|    3 | Pipe        | [Post sobre o R 4.1](https://blog.curso-r.com/posts/2021-05-06-o-novo-pipe-esta-chegando/)                                                                |
+|    3 | Pipe        | [Live de lançamento do R 4.1](https://www.youtube.com/watch?v=RPSLFU_5OGk&t=3225s)                                                                        |
+|    3 | Pipe        | [Livro Ciência de Dados em R - Capítulo 6 - Pipe](https://livro.curso-r.com/6-pipe.html)                                                                  |
 
 ## Redes sociais da Curso-R
 
