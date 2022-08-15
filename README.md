@@ -36,9 +36,11 @@ Fora do horário de aula ou monitoria:
 
 ## Scripts utilizados em aula
 
-| script                                                                                                      |
-|:------------------------------------------------------------------------------------------------------------|
-| [01-introducao.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/01-introducao.R) |
+| script                                                                                                                                  |
+|:----------------------------------------------------------------------------------------------------------------------------------------|
+| [01-introducao.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/01-introducao.R)                             |
+| [02-tabelas.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/02-tabelas.R)                                   |
+| [03-comparacoes-logicas-e-NA.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/03-comparacoes-logicas-e-NA.R) |
 
 ## Lição de casa
 
