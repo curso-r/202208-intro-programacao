@@ -104,7 +104,8 @@ tibble::tribble(
   ~exercicio,
   "[01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/)",
   "[02-tabelas](https://acursor.shinyapps.io/intro-programacao_tabelas)",
-  "[03-comparacoes-logicas-e-NA](https://acursor.shinyapps.io/intro-programacao_dados-faltantes-NA)"
+  "[03-comparacoes-logicas-e-NA](https://acursor.shinyapps.io/intro-programacao_dados-faltantes-NA)",
+  "[04-filtros](https://acursor.shinyapps.io/intro-programacao_filtros/#section-pipe)"
 ) %>% 
   knitr::kable()
 ```

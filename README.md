@@ -3,23 +3,23 @@
 
 ## Informações importantes
 
-- [Clique
-  aqui](https://github.com/curso-r/202208-intro-programacao/archive/refs/heads/main.zip)
-  para baixar o material do curso.
+-   [Clique
+    aqui](https://github.com/curso-r/202208-intro-programacao/archive/refs/heads/main.zip)
+    para baixar o material do curso.
 
-- Nosso blog: <https://curso-r.com/blog/>
+-   Nosso blog: <https://curso-r.com/blog/>
 
-- Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
-  [Zen do R](https://curso-r.github.io/zen-do-r/)
+-   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+    [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
-- perguntas gerais sobre o curso deverão ser feitas no Classroom.
+-   perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
-- perguntas sobre R, principalmente as que envolverem código, deverão
-  ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
+-   perguntas sobre R, principalmente as que envolverem código, deverão
+    ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
@@ -49,6 +49,7 @@ Fora do horário de aula ou monitoria:
 | [01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/)                      |
 | [02-tabelas](https://acursor.shinyapps.io/intro-programacao_tabelas)                             |
 | [03-comparacoes-logicas-e-NA](https://acursor.shinyapps.io/intro-programacao_dados-faltantes-NA) |
+| [04-filtros](https://acursor.shinyapps.io/intro-programacao_filtros/#section-pipe)               |
 
 ## Material extra
 
