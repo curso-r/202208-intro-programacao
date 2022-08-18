@@ -41,6 +41,9 @@ Fora do horário de aula ou monitoria:
 | [01-introducao.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/01-introducao.R)                             |
 | [02-tabelas.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/02-tabelas.R)                                   |
 | [03-comparacoes-logicas-e-NA.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/03-comparacoes-logicas-e-NA.R) |
+| [04-filtros.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/04-filtros.R)                                   |
+| [05-pipe.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/05-pipe.R)                                         |
+| [06-loops.R](https://github.com/curso-r/202208-intro-programacao/blob/master/exemplos/06-loops.R)                                       |
 
 ## Lição de casa
 
