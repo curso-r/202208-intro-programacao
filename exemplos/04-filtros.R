@@ -13,12 +13,12 @@ base_de_dados$atraso_chegada == 4  # Retorna um vetor de VERDADEIRO ou FALSO
 
 # Podemos filtrar linhas baseadas no retorno do vetor com TRUE e FALSE,
 # sendo que: o que for TRUE ficará na base, e o que for FALSE será removido.
-base_de_dados[base_de_dados$origem == "EWR",]
+base_de_dados[base_de_dados$origem == "EWR", ]
 base_de_dados[base_de_dados$tempo_voo > 100,]
 
 #  Podemos combinar!
-base_de_dados[base_de_dados$origem == "EWR" | base_de_dados$tempo_voo > 100,]
-base_de_dados[base_de_dados$origem == "EWR" & base_de_dados$tempo_voo > 100,]
+View(base_de_dados[base_de_dados$origem == "EWR" | base_de_dados$tempo_voo > 100,])
+View(base_de_dados[base_de_dados$origem == "EWR" & base_de_dados$tempo_voo > 100,])
 
 
 
@@ -27,20 +27,31 @@ base_de_dados[base_de_dados$origem == "EWR" & base_de_dados$tempo_voo > 100,]
 ## Exercícios --------------------------------------------------------------
 
 # 1. Usando a base de voos, e considerando que as colunas "dia", "mes" e "ano"
-# compõem a data de saída do voo, escreva um código que devolva apenas os voos 
+# compõem a data de saída do voo, escreva um código que devolva apenas os voos
 # que saíram no dia 15/01/2013:
 
+base_de_dados[base_de_dados$dia == 15 &
+                base_de_dados$mes == 1 &
+                base_de_dados$ano == 2013, ]
 
-# 2. Usando a base de voos, escreva um código que devolva apenas os voos 
+# 2. Usando a base de voos, escreva um código que devolva apenas os voos
 # que NÃO sairam do aeroporto JFK:
 
+base_de_dados[!base_de_dados$origem == "JFK" , ]
 
-# 3. Usando a base de voos, escreva um código que devolva apenas os voos 
-# que sairam do aeroporto JFK, e foram para Atlanta ("ATL"), 
+# 3. Usando a base de voos, escreva um código que devolva apenas os voos
+# que sairam do aeroporto JFK, e foram para Atlanta ("ATL"),
 # e salve em um objeto chamado voos_jfk_atlanta:
 
-# 4. Usando a base de voos, escreva um código que devolva apenas os voos 
+voos_jfk_atlanta <- base_de_dados[base_de_dados$origem == "JFK" &
+                                    base_de_dados$destino == "ATL", ]
+
+# 4. Usando a base de voos, escreva um código que devolva apenas os voos
 # que saíram nos dias 15/01/2013 ou 16/01/2013:
+
+base_de_dados[base_de_dados$dia %in% c(15, 16) &
+                base_de_dados$mes == 1 &
+                base_de_dados$ano == 2013, ]
 
 # filter com dplyr -----------------
 
@@ -84,9 +95,30 @@ avaliacoes <- data.frame(avaliacao_do_cliente, estado_de_nascimento)
 
 # 1. Filtre as avaliações superiores a 3.
 
+filter(avaliacoes, avaliacao_do_cliente > 3)
+
+avaliacoes[avaliacoes$avaliacao_do_cliente > 3, ]
+
 # 2. Filtre as avaliações de SP ou MT.
+
+library("dplyr")
+
+filter(avaliacoes,
+       estado_de_nascimento == "SP" |
+         estado_de_nascimento == "MT") |> View()
+
+filter(avaliacoes, estado_de_nascimento %in% c("SP", "MT"))
 
 # 3. Filtre as avaliações de PB ou MT com nota inferior a 4.
 
+filter(avaliacoes,
+       (estado_de_nascimento == "PB" |
+          estado_de_nascimento == "MT") &
+         avaliacao_do_cliente < 4)
 
+filter(avaliacoes, estado_de_nascimento %in% c("PB", "MT"),
+       avaliacao_do_cliente<4)
+
+
+# lição de casa!
 

@@ -54,10 +54,10 @@ numeros == 23
 
 ## Comparações lógicas serão a base dos filtros!
 
-numeros <- c(4, 8, 15, 16, 23, 42)
+numeros <- c(4, 15, 15, 16, 23, 42)
 
 # seleciona apenas o primeiro elemento do vetor "numeros"
-numeros[c(TRUE, FALSE, FALSE, FALSE, FALSE, FALSE)]
+numeros[c(TRUE, FALSE, TRUE, FALSE, FALSE, FALSE)]
 
 # seleciona apenas aqueles elementos do vetor "numeros" que forem iguais a 15
 numeros[numeros == 15]
@@ -73,32 +73,32 @@ vetor <- c(4, 8, 10, 15, 16, 23, 42)
 
 # Operadores lógicos ----------
 
-## & - E - Para ser verdadeiro, os dois lados
+## && - E - Para ser verdadeiro, os dois lados
 # precisam resultar em TRUE
 
 x <- 5
-x >= 3 & x <=7
+x >= 3 && x <=7
 
 
 y <- 2
-y >= 3 & y <= 7
+y >= 3 && y <= 7
 
-## | - OU - Para ser verdadeiro, apenas um dos
+## || - OU - Para ser verdadeiro, apenas um dos
 # lados precisa ser verdadeiro
 
 y <- 2
-y >= 3 | y <=7
+y >= 3 || y <=7
 
 y <- 1
-y >= 3 | y == 0
+y >= 3 || y == 0
 
 ## O mesmo acontece com vetores
 
-idade <- c(33, 19, 55, 66, 33, 23)
-sexo <- c("M", "F", "M", "F", "F", "M")
+x_vetor <- c(89, 36, 96, 10, 99, 39)
+y_vetor <- c(53, 30, 15, 54, 34, 60)
 
-idade > 35 | sexo == "F"
-idade < 40 & sexo == "M"
+x_vetor > 50 | y_vetor < 10
+x_vetor <= 50 & y_vetor > 10
 
 ## ! - Negação - É o "contrário"
 
@@ -106,16 +106,13 @@ idade < 40 & sexo == "M"
 
 !FALSE
 
-estados <- c("AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA",
-             "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO",
-             "RR", "RS", "SC", "SE", "SP", "TO")
 
-# pegar todos estados, menos do sul
+w <- 5
+(!w < 4)
 
-estados %in% c("PR", "SC", "RS")
-estados[estados %in% c("PR", "SC", "RS")]
 
-estados[!estados %in% c("PR", "SC", "RS")]
+!(x_vetor > 50 | y_vetor < 10)
+
 
 # Valores especiais -------------------------------------------------------
 
@@ -164,9 +161,17 @@ is.null(NULL)
 
 # Dataframes e funções ------------
 
+install.packages("readr")
+
+library("readr")
+
+base_de_dados <- read_csv2("dados/voos_de_janeiro.csv")
+
 # E se quisermos calcular coisas com a coluna atraso_chegada?
 
-sum(base_de_dados$atraso_chegada)
+sum(base_de_dados$distancia)
+
+sum(base_de_dados$atraso_chegada, na.rm = TRUE)
 
 # A coluna atraso_chegada possui NA, por isso a soma dela será NA!
 
@@ -178,6 +183,11 @@ is.na(base_de_dados$atraso_chegada) # retornará um vetor com TRUE e FALSE,
 sum(is.na(base_de_dados$atraso_chegada)) # Quantos NA tem na coluna?
 # Assim somaremos quantos NA tem na coluna,
 # pois cada TRUE (presença de NA) será contabilizado como 1.
+
+# usando o pipe! (script 5)
+base_de_dados$atraso_chegada |>
+  is.na() |>
+  sum()
 
 
 # ... e se quisermos ignorar o NA?
@@ -209,3 +219,17 @@ sd(base_de_dados$atraso_chegada, na.rm = TRUE)
 # Exercícios ------------------------------------------
 # 1. Calcule o valor mínimo e valor máximo da coluna "atraso_saida". O que
 # esses valores significam?
+
+# Para a base de janeiro
+
+min(base_de_dados$atraso_saida, na.rm = TRUE)
+
+max(base_de_dados$atraso_saida, na.rm = TRUE)/60
+
+# só atrasos maiores que 0
+
+base_de_dados$atraso_saida > 0
+
+base_de_dados$atraso_saida[base_de_dados$atraso_saida > 0]
+
+min(base_de_dados$atraso_saida[base_de_dados$atraso_saida > 0], na.rm = TRUE)

@@ -24,8 +24,8 @@
 # do nosso escopo
 
 for (i in 1:10) {
-# escopo: números de 1 a 10, representados pela letra "i"
-  
+  # escopo: números de 1 a 10, representados pela letra "i"
+  Sys.sleep(0.5)
   print(i)
   # ação, que faz menção à letra i
 }
@@ -34,36 +34,36 @@ for (i in 1:10) {
 
 for (i in 1:10) {
   # escopo: números de 1 a 10, representados pela letra "i"
-  
+
   # DAQUI PRA BAIXO VEM A AÇÃO:
-  
+
   quadrado_de_i <- i^2
   # a ação pode ter quantas linhas você quiser, é um trecho de código em que aplicam as mesmas regras
   # que estamos estudando até agora
-  
+
   # podemos criar uma variável, por exemplo!
-  
+
   print(quadrado_de_i)
   # terminamos igual fizemos na última vez: imprimindo algo no console
-  
+
 }
 
 # outro exemplo de ação
 
-for (i in 1:10) {
+for (j in 1:10) {
   # escopo: números de 1 a 10, representados pela letra "i"
-  
+
   # DAQUI PRA BAIXO VEM A AÇÃO:
-  
-  textinho_a_ser_impresso <- paste0("Esse é o passo: ", i)
+  Sys.sleep(0.7)
+  textinho_a_ser_impresso <- paste0("Esse é o passo: ", j)
   # a ação pode ter quantas linhas você quiser, é um trecho de código em que aplicam as mesmas regras
   # que estamos estudando até agora
-  
+
   # podemos criar uma variável, por exemplo!
-  
+
   print(textinho_a_ser_impresso)
   # terminamos igual fizemos na última vez: imprimindo algo no console
-  
+
 }
 
 # Exemplos de ESCOPO
@@ -89,9 +89,9 @@ meu-objeto <- 3
 
 # for (PEDACO in VETOR_TOTAL){
 for (i in 1:10) {
-# VARIAVEL, aqui chamamos de i
-# o 1:10 representa o VETOR_TOTAL
-  
+  # VARIAVEL, aqui chamamos de i
+  # o 1:10 representa o VETOR_TOTAL
+
   print(i)
   # nossa ação. precissa mencionar a letra i
 }
@@ -103,7 +103,7 @@ aonde_vou_iterar <- 1:10
 for (i in aonde_vou_iterar) {
   # VARIAVEL, aqui chamamos de i
   # o 1:10 representa o VETOR_TOTAL
-  
+
   print(i)
   # nossa ação. precisa mencionar a letra i
 }
@@ -114,8 +114,8 @@ aonde_vou_iterar <- c("a", "b", "c", "d", "e", "f")
 
 for (i in aonde_vou_iterar) {
   # VARIAVEL, aqui chamamos de i
-  # o 1:10 representa o VETOR_TOTAL
-  
+  # o c("a", "b", "c", "d", "e", "f") representa o VETOR_TOTAL
+
   print(i)
   # nossa ação. precisa mencionar a letra i
 }
@@ -125,11 +125,22 @@ for (i in aonde_vou_iterar) {
 aonde_vou_iterar <- c("c", "a", "d", "b", "e", "f")
 # embaralhamos a ordem das letras
 
-for (i in aonde_vou_iterar) {
+for (banana in aonde_vou_iterar) {
   # VARIAVEL, aqui chamamos de i
-  # o 1:10 representa o VETOR_TOTAL
-  
-  print(i)
+  # o c("c", "a", "d", "b", "e", "f") representa o VETOR_TOTAL
+
+  print(banana)
+  # nossa ação. precisa mencionar a letra i
+}
+
+letras <- c("c", "a", "d", "b", "e", "f")
+# embaralhamos a ordem das letras
+
+for (letra in letras) {
+  # VARIAVEL, aqui chamamos de i
+  # o c("c", "a", "d", "b", "e", "f") representa o VETOR_TOTAL
+
+  print(letra)
   # nossa ação. precisa mencionar a letra i
 }
 
@@ -142,7 +153,7 @@ aonde_vou_iterar <- c("c", "a", "d", "b", "e", "f")
 for (variavel in aonde_vou_iterar) {
   # VARIAVEL, aqui chamamos de i
   # o 1:10 representa o VETOR_TOTAL
-  
+
   print(variavel)
   # nossa ação. precisa mencionar a letra i
 }
@@ -178,18 +189,18 @@ arquivos_de_dados <- c("dados/voos_de_janeiro.csv", "dados/voos_de_fevereiro.csv
 # vetor de textos com o caminhos dos nossos arquivos
 
 for(arquivo in arquivos_de_dados){
-# como ficou o nosso ESCOPO?
-# VARIAVEL aqui levou esse nome "arquivo"
-# VETOR_TOTAL aqui levou o nome "arquivos_de_dados"
-  
+  # como ficou o nosso ESCOPO?
+  # VARIAVEL aqui levou esse nome "arquivo"
+  # VETOR_TOTAL aqui levou o nome "arquivos_de_dados"
+
   dados <- read_csv2(arquivo)
-  
+
   maior_atraso <- max(dados$atraso_saida)
-  
+
   texto_de_saida <- paste0("O maior atraso no arquivo ", arquivo, " é ", maior_atraso)
-  
+
   print(texto_de_saida)
-  
+
 }
 
 # o que não está muito legal nesse código?
@@ -247,15 +258,15 @@ for(arquivo in arquivos_de_dados){
 arquivos <- c("dados/voos_de_janeiro.csv", "dados/voos_de_fevereiro.csv", "dados/voos_de_marco.csv")
 
 for(arquivo in arquivos){
-  
+
   dados <- read_csv2(arquivo)
-  
+
   maior_atraso <- max(dados$atraso_saida, na.rm = TRUE)
-  
+
   texto_de_saida <- paste0("O maior atraso no arquivo ", arquivo, " é ", maior_atraso)
-  
+
   print(texto_de_saida)
-  
+
 }
 
 # Exercícios --------------------------------------------------------------
@@ -269,7 +280,7 @@ for(arquivo in arquivos){
 
 
 # While ------
-# O while é outra estrutura de repetição muito comum em 
+# O while é outra estrutura de repetição muito comum em
 # linguagens de programação.
 
 # Leia como: Enquanto uma condição for verdadeira, faça XYZ.
@@ -284,3 +295,6 @@ while (dia < 30) {
   print(paste0("O mês ainda não acabou! Hoje é dia ", dia, "!"))
   dia <- dia + 1
 }
+
+
+## dúvida do marcos: fazer subtração de vetores
