@@ -247,7 +247,7 @@ c(1, 3, 5)
 # e o bolo é o resultado da função
 
 # Formatar um número com mais dígitos depois da vírgula
-format(2/3)
+format(2/3, digits = 10)
 
 # A ordem é importante se você não nomear os argumentos
 

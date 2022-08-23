@@ -71,13 +71,17 @@ getwd()
 # no computador: caminhos absolutos e relativos.
 
 # Caminhos absolutos: são completos, partindo da "raíz" do computador.
-"/home/william/Documents/Curso-R/main-r4ds-1/dados/imdb.csv"
+"C:/Users/terez/OneDrive/Documentos/Curso R/202208-intro" # Windows
+"/home/william/Documents/Curso-R/main-r4ds-1/dados/imdb.csv" # Linux
+"/Users/clente/Documents/202208-intro-programacao" # Mac
 
 # Caminhos relativos: são relativos ao  diretório de trabalho atual, partem dele.
 "dados/imdb.csv"
 
 # (cara(o) professora(o), favor lembrar de falar da dica
 # de navegação entre as aspas e a tecla tab)
+
+"exemplos/02-tabelas.R"
 
 # Carregando os dados de uma planhila -------
 
