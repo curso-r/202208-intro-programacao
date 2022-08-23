@@ -5,7 +5,7 @@ params:
   trilha_clean: programacao_para_ciencia_de_dados
   turma: 202208-intro-programacao
   nome_curso: Introdução a programação com R
-  num_aula: '3'
+  num_aula: '5'
   download_material: 'TRUE'
 ---
 
@@ -75,15 +75,15 @@ dplyr::mutate(
 ## Scripts utilizados em aula
 
 ```{r}
-pasta <- "exemplos/"
+pasta <- "exemplos_de_aula/"
 
 
 knitr::kable(
   tibble::tibble(
-    script = CursoRopen:::list_github_files(params$turma, pasta, ".R$"),
+    script = CursoRopen:::list_github_files(params$main_repo, pasta, ".R$"),
     link = paste0(
       "https://github.com/curso-r/",
-      params$turma,
+      params$main_repo,
       "/blob/master/",
       script
     )
@@ -102,10 +102,12 @@ knitr::kable(
 ```{r}
 tibble::tribble(
   ~exercicio,
-  "[01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao/)",
+  "[01-introducao](https://acursor.shinyapps.io/intro-programacao_introducao)",
   "[02-tabelas](https://acursor.shinyapps.io/intro-programacao_tabelas)",
   "[03-comparacoes-logicas-e-NA](https://acursor.shinyapps.io/intro-programacao_dados-faltantes-NA)",
-  "[04-filtros](https://acursor.shinyapps.io/intro-programacao_filtros/#section-pipe)"
+  "[04-filtros](https://acursor.shinyapps.io/intro-programacao_filtros)",
+  "[05-loops](https://acursor.shinyapps.io/intro-programacao_loops)",
+  "[06-funcoes](https://acursor.shinyapps.io/intro-programacao_funcoes)"
 ) %>% 
   knitr::kable()
 ```
@@ -134,7 +136,7 @@ id_spreadsheet %>%
   dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
   dplyr::select(-desc,-url) %>%
   dplyr::arrange(aula) %>%
-  dplyr::filter(aula <= as.numeric(params$num_aula)) %>%
+  # dplyr::filter(aula <= as.numeric(params$num_aula)) %>%
   knitr::kable(col.names = c("Aula", "Tema", "Descrição")) 
 }, "erro")
 
