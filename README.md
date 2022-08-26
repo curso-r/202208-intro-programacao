@@ -50,7 +50,6 @@ Fora do horário de aula ou monitoria:
 | [09-instalar-pacotes.R](https://github.com/curso-r/main-intro-programacao/blob/master/exemplos_de_aula/09-instalar-pacotes.R)                 |
 | [10-manipulacao-arquivos.R](https://github.com/curso-r/main-intro-programacao/blob/master/exemplos_de_aula/10-manipulacao-arquivos.R)         |
 | [11-exemplo-source.R](https://github.com/curso-r/main-intro-programacao/blob/master/exemplos_de_aula/11-exemplo-source.R)                     |
-| [exemplo-source.R](https://github.com/curso-r/main-intro-programacao/blob/master/exemplos_de_aula/exemplo-source.R)                           |
 
 ## Lição de casa
 
